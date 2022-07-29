@@ -20,7 +20,7 @@ export default function Banner() {
             </a>
 
             <a className='w-14' href='https://github.com/lucaszanisk'>
-              <img src={logoGithub} alt='logo git hub' />
+              <img src={logoGithub} alt='logo github' />
             </a>
           </div>
         </div>
