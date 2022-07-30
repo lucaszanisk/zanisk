@@ -2,7 +2,7 @@ import logo from 'public/svg/logo-zanisk.svg';
 export default function NavBar() {
   return (
     <>
-      <div className='mx-auto grid w-4/5 grid-cols-2 '>
+      <nav className='mx-auto grid w-4/5 grid-cols-2 '>
         <img className='' src={logo} alt='logo' />
 
         <div className='mt-5'>
@@ -28,7 +28,7 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
     </>
   );
 }
