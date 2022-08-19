@@ -6,6 +6,7 @@ import Seo from '@/components/Seo';
 import NavBar from '@/components/NavBar';
 import Banner from '@/components/Banner';
 import Xp from '@/components/Xp';
+import Projetos from '@/components/Projetos';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <NavBar />
         <Banner />
         <Xp />
+        <Projetos />
       </main>
     </Layout>
   );
