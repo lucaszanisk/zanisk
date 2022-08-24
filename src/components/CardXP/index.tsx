@@ -5,11 +5,11 @@ export default function CardXP({ name, data, texto, left }: any) {
         <p className=' text-base font-bold'>{name}</p>
         <p className=' mt-2 text-xs font-bold '> {data}</p>
         <div className=' mt-2 border-l-4 border-solid border-black text-justify'>
-          {texto.map((item: any) => (
-            <>
+          {texto.map((item: any, key: any) => (
+            <div key={key}>
               <p className='w-1/2 pl-4 text-sm '>{item}</p>
               <br />
-            </>
+            </div>
           ))}
         </div>
       </div>

@@ -1,10 +1,20 @@
 import bandeiraVerde from 'public/svg/bandeira-3.svg';
 import { Form } from '@unform/web';
 import Input from '@/components/Input';
-import { useRef } from 'react';
+import { useCallback, useRef } from 'react';
+import { sendEmail } from '@/services/contactMe';
+import { Scope } from '@unform/core';
 
 export default function Contato() {
-  const formRef = useRef(null);
+  const formRef = useRef({});
+
+  const handleSubmit = useCallback(async (data: object) => {
+    try {
+      await sendEmail(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
   return (
     <>
@@ -24,32 +34,33 @@ export default function Contato() {
       <Form
         className='mx-auto mt-9 grid w-1/2 grid-rows-2'
         onSubmit={(data) => {
-          alert(data.email);
-          console.log(data);
+          handleSubmit(data);
         }}
       >
-        <Input
-          className='mb-9 w-1/2 bg-zanisk-sand'
-          name='email'
-          ref={formRef}
-          placeholder='Digite seu email'
-          type='email'
-        />
-        <Input
-          className='mb-9 w-1/4 bg-zanisk-sand'
-          name='assunto'
-          ref={formRef}
-          placeholder='Sobre o que vamos conversar?'
-          type='text'
-        />
+        <Scope path='template_params'>
+          <Input
+            className='mb-9 w-1/2 bg-zanisk-sand'
+            name='email'
+            ref={formRef}
+            placeholder='Digite seu email'
+            type='email'
+          />
+          <Input
+            className='mb-9 w-1/4 bg-zanisk-sand'
+            name='assunto'
+            ref={formRef}
+            placeholder='Sobre o que vamos conversar?'
+            type='text'
+          />
 
-        <Input
-          className='h-full bg-zanisk-sand'
-          name='mensagem'
-          ref={formRef}
-          placeholder='Digite sua mensagem'
-          type='text'
-        />
+          <Input
+            className='h-full bg-zanisk-sand'
+            name='mensagem'
+            ref={formRef}
+            placeholder='Digite sua mensagem'
+            type='text'
+          />
+        </Scope>
         <button
           className=' mx-auto my-20 h-10 w-1/5 rounded-full bg-zanisk-sand font-bold text-zanisk-green hover:opacity-50'
           type='submit'
