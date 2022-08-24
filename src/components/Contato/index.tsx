@@ -4,7 +4,7 @@ import { useRef } from 'react';
 
 import emailjs from '@emailjs/browser';
 export default function Contato() {
-  const form = useRef('');
+  const form: any = useRef();
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -41,19 +41,19 @@ export default function Contato() {
         </h2>
       </div>
       <form
-        className=' mx-auto  grid w-1/2 grid-cols-1 font-bold'
+        className='mx-auto mt-12  grid w-1/2 grid-cols-1 font-bold'
         ref={form}
         onSubmit={handleSubmit}
       >
         <input
-          placeholder='Digite seu nome'
+          placeholder='Qual seu nome?'
           className='mx-auto mb-4 w-1/2 rounded-full bg-zanisk-sand focus:opacity-90'
           type='text'
           name='from_name'
         />
 
         <input
-          placeholder='Sobre que assunto deseja conversar?'
+          placeholder='Sobre que vamos conversar?'
           className=' mx-auto mb-4 w-1/2 rounded-full bg-zanisk-sand focus:opacity-90'
           type='text'
           name='subject'
@@ -67,7 +67,7 @@ export default function Contato() {
         />
 
         <textarea
-          placeholder='Digite sua mensagem aqui'
+          placeholder='Digite aqui sua mensagem'
           className='mb-4 rounded-full bg-zanisk-sand pl-9 focus:opacity-90'
           name='message'
         />
