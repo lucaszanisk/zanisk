@@ -2,8 +2,16 @@ import foto from 'public/images/foto-lucas.svg';
 import logoLinkedin from 'public/svg/logo-linkedin.svg';
 import logoGithub from 'public/svg/logo-github.svg';
 import setaRosa from 'public/svg/seta-rosa.svg';
+import About from '@/components/About';
+import { useEffect, useState } from 'react';
 
 export default function Banner() {
+  const [showAbout, setShowAbout] = useState(false);
+
+  useEffect(() => {
+    console.log(showAbout);
+  }, [showAbout]);
+
   return (
     <>
       <div className='mx-auto grid w-4/5 grid-cols-2 items-center bg-zanisk-blue'>
@@ -35,9 +43,18 @@ export default function Banner() {
 
         <img src={foto} alt='foto lucas' />
       </div>
-      <a href='#xp'>
-        <img className='mx-auto' src={setaRosa} alt='' />
-      </a>
+      {showAbout && <About />}
+      <div
+        className={
+          showAbout
+            ? 'mx-auto grid rotate-180 grid-cols-1'
+            : 'mx-auto grid grid-cols-1'
+        }
+      >
+        <button onClick={() => setShowAbout(!showAbout)}>
+          <img className='mx-auto' src={setaRosa} alt='' />
+        </button>
+      </div>
     </>
   );
 }
