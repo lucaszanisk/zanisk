@@ -7,6 +7,7 @@ import NavBar from '@/components/NavBar';
 import Banner from '@/components/Banner';
 import Xp from '@/components/Xp';
 import Projetos from '@/components/Projetos';
+import Contato from '@/components/Contato';
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <Banner />
         <Xp />
         <Projetos />
+        <Contato />
       </main>
     </Layout>
   );

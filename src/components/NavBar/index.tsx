@@ -7,19 +7,22 @@ export default function NavBar() {
 
         <div className='mt-5'>
           <ul className='grid grid-cols-4 gap-16 text-base text-zanisk-sand'>
-            <li>XP</li>
+            <a href='#xp'>
+              <li>XP</li>
+            </a>
             <li className='grid h-14 grid-rows-3 '>
               <span>SO</span>
               <span>BR</span>
               <span>E</span>
             </li>
-
-            <li className='grid h-20 grid-rows-4 '>
-              <span>PR</span>
-              <span>OJ</span>
-              <span>ET</span>
-              <span>OS</span>
-            </li>
+            <a href='#projetos'>
+              <li className='grid h-20 grid-rows-4 '>
+                <span>PR</span>
+                <span>OJ</span>
+                <span>ET</span>
+                <span>OS</span>
+              </li>
+            </a>
             <li className='grid h-20 grid-rows-4 '>
               <span>CO</span>
               <span>NT</span>

@@ -4,7 +4,7 @@ import CardXP from '@/components/CardXP';
 export default function Xp() {
   return (
     <>
-      <div className='bg-zanisk-sand'>
+      <div id='xp' className='bg-zanisk-sand'>
         <img src={bandeiraAzul} alt='' />
         <h1 className='ml-48 text-5xl'>XP</h1>
 

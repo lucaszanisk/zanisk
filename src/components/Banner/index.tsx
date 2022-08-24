@@ -15,11 +15,19 @@ export default function Banner() {
             DESENVOLVEDOR FRONTEND
           </h2>
           <div className='mt-10 grid w-48 grid-cols-2 gap-0'>
-            <a className='w-12' href='https://www.linkedin.com/in/lucaszanisk/'>
+            <a
+              className='w-12'
+              target='_blank'
+              href='https://www.linkedin.com/in/lucaszanisk/'
+            >
               <img src={logoLinkedin} alt='logo linkedin' />
             </a>
 
-            <a className='w-14' href='https://github.com/lucaszanisk'>
+            <a
+              className='w-14'
+              target='_blank'
+              href='https://github.com/lucaszanisk'
+            >
               <img src={logoGithub} alt='logo github' />
             </a>
           </div>
@@ -27,7 +35,7 @@ export default function Banner() {
 
         <img src={foto} alt='foto lucas' />
       </div>
-      <a href=''>
+      <a href='#xp'>
         <img className='mx-auto' src={setaRosa} alt='' />
       </a>
     </>

@@ -18,6 +18,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@unform/core": "^2.1.6",
+    "@unform/web": "^2.1.6",
     "clsx": "^1.2.1",
     "next": "^12.2.3",
     "next-images": "^1.8.4",
