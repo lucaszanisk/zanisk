@@ -1,8 +1,6 @@
-import bandeiraVerde from 'public/svg/bandeira-3.svg';
-
-import { useRef } from 'react';
-
 import emailjs from '@emailjs/browser';
+import bandeiraVerde from 'public/svg/bandeira-3.svg';
+import { useRef } from 'react';
 export default function Contato() {
   const form: any = useRef();
 
