@@ -13,7 +13,7 @@ export default function HomePage() {
     <Layout>
       <Seo />
 
-      <main className='bg-zanisk-blue'>
+      <main className='overflow-hidden bg-zanisk-blue'>
         <NavBar />
         <Banner />
         <Xp />
