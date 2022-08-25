@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import logo from 'public/images/logo.png';
 
 const defaultMeta = {
   title: 'Zanisk',
