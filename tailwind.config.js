@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Roboto', 'sans-serif'],
-        Inter: ['Inter', ...fontFamily.sans],
+        primary: ['Raleway', 'sans-serif'],
+        Libre: ['Libre Baskerville', 'serif'],
       },
       colors: {
         'zanisk-blue': ' #0D1B26',

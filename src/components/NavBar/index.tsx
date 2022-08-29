@@ -36,7 +36,7 @@ export default function NavBar() {
               data-aos-duration='1000'
               href=''
             >
-              <li className='grid h-14 grid-rows-3 '>
+              <li className='grid h-14 grid-rows-3'>
                 <span>SO</span>
                 <span>BR</span>
                 <span>E</span>
