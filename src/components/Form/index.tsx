@@ -64,7 +64,7 @@ export default function Form() {
       ) : (
         <form
           id='form'
-          className='flex flex-col px-14'
+          className='flex flex-col px-14 lg:px-96'
           ref={form}
           onSubmit={handleSubmit}
         >

@@ -2,7 +2,7 @@ import Layout from '@/components/layout/Layout';
 export default function Sobre() {
   return (
     <Layout>
-      <p className='mt-20 px-14 text-justify font-Libre text-base font-normal'>
+      <p className='mt-20 px-14 text-justify font-Libre text-base font-normal lg:px-60 lg:text-lg'>
         Meu nome é Lucas, tenho 26 anos e comecei meus estudos na área de
         desenvolvimento em 2018, até então por curiosidade enquanto cursava
         arquitetura e urbanismo em Manaus-AM e pensava em futuramente conciliar
