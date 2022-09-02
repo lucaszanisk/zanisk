@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Form() {
   const [isLoading, setIsLoading] = useState(false);
   const form: any = useRef();
-  const notify = (text: string, notifyFunction: Function) =>
+  const notify = (text: string, notifyFunction: any) =>
     notifyFunction(text, {
       position: 'top-right',
       autoClose: 5000,

@@ -12,7 +12,11 @@ export default function Banner() {
         Sou desenvolvedor frontend junior residente em São Paulo, Brasil.
       </h2>
       <div className='mt-12 flex justify-center lg:ml-60 lg:justify-start'>
-        <a target='_blank' href='https://www.linkedin.com/in/lucaszanisk/'>
+        <a
+          rel='noreferrer'
+          target='_blank'
+          href='https://www.linkedin.com/in/lucaszanisk/'
+        >
           <img
             className='hover:animate-bounce'
             src={logoIn}
@@ -20,6 +24,7 @@ export default function Banner() {
           />
         </a>
         <a
+          rel='noreferrer'
           target='_blank'
           className='mx-16'
           href='https://www.github.com/lucaszanisk'
@@ -30,7 +35,11 @@ export default function Banner() {
             alt='logo github'
           />
         </a>
-        <a target='_blank' href='https://www.instagram.com/lucasznsk'>
+        <a
+          rel='noreferrer'
+          target='_blank'
+          href='https://www.instagram.com/lucasznsk'
+        >
           <img
             className='hover:animate-bounce'
             src={logoInsta}
