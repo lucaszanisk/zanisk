@@ -43,6 +43,7 @@ export default function Xp() {
             </button>
           ) : (
             <button
+              className='animate-bounce'
               key={cards.indexOf(item)}
               onClick={() => setShowCard(cards.indexOf(item))}
             >
