@@ -58,7 +58,9 @@ export default function Form() {
   };
   return (
     <>
-      <h1 className='mt-20 mb-16 px-8 text-center'>Vamos bater um papo?</h1>
+      <h1 className='mt-20 mb-16 animate-bounce px-8 text-center'>
+        Vamos bater um papo?
+      </h1>
       {isLoading ? (
         <LoadingComponent />
       ) : (
@@ -95,7 +97,7 @@ export default function Form() {
             name='message'
           />
           <input
-            className='mx-auto mt-4 cursor-pointer rounded-lg border border-black p-2 hover:bg-slate-100 '
+            className='mx-auto mt-4 animate-pulse cursor-pointer rounded-lg border border-black p-2 hover:bg-slate-100 '
             type='submit'
             value='Enviar'
           />

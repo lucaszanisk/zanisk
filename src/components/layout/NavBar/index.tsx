@@ -1,7 +1,9 @@
 import Menu from '@/components/layout/Menu';
 import MenuDesktop from '@/components/layout/MenuDesktop';
+import Image from 'next/image';
+import Link from 'next/link';
 import logo from 'public/svg/logopb.svg';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +11,17 @@ export default function NavBar() {
   return (
     <>
       <div className='grid grid-cols-2 px-8 pt-5 lg:px-60'>
-        <img src={logo} alt='logo-zanisk' />
+        <Link href='/'>
+          <div>
+            <Image
+              className='hover:cursor-pointer'
+              src={logo}
+              width={48}
+              height={48}
+            />
+          </div>
+        </Link>
+
         <MenuDesktop />
         <button
           onClick={() => setIsOpen((prevState) => !prevState)}

@@ -1,8 +1,21 @@
 import Layout from '@/components/layout/Layout';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import { useEffect } from 'react';
 export default function Sobre() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Layout>
-      <p className='mt-20 px-14 text-justify font-Libre text-base font-normal lg:px-60 lg:text-lg'>
+      <p
+        data-aos='fade-right'
+        data-aos-delay='100'
+        data-aos-duration='1000'
+        className='mt-20 px-14 text-justify font-Libre text-base font-normal lg:px-60 lg:text-lg'
+      >
         Meu nome é Lucas, tenho 26 anos e comecei meus estudos na área de
         desenvolvimento em 2018, até então por curiosidade enquanto cursava
         arquitetura e urbanismo em Manaus-AM e pensava em futuramente conciliar
