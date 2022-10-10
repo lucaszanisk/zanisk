@@ -30,7 +30,7 @@ export default function Form() {
     ) {
       notify('Campos vazios', toast.error);
     } else {
-      form.current.reset();
+      // form.current.reset();
       setIsLoading(true);
       emailjs
         .sendForm(
